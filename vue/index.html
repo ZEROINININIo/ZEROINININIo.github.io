@@ -144,13 +144,13 @@
                         //创FormData对象
                         var formdata = new FormData();
                         //append(key,value)在数据末尾追加数据。 这儿的key值需要和后台定义保持一致
-                        formdata.append('img', files);
+                        formdata.append('big', files);
 
                         //用axios上传，
                         axios({
                             method: "POST",
                             //url: "http://www.clluo.com:8060/uploadImg",
-							url: "http://ld520wa.xyz/jquery/img/big",
+							url: "http://ld520wa.xyz:8060/jquery/img/big",
                             data: formdata,
                             headers: {
                                 "Content-Type": "multipart/form-data"
