@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="utf-8" />
+<meta name="author" content="Script Tutorials" />
+<title>HTML5制作图片自由裁剪上传功能</title>
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<link href="css/jquery.Jcrop.min.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.Jcrop.min.js"></script>
+<script src="js/script.js"></script>
+</head>
+<body>
+<header>
+<h2>HTML5 图片上传+ Jcrop剪切</h2>
+</header>
+<div class="demo">
+            <div class="bheader"><h2>-- PHP结合HTML5技术上传图片并裁剪 --</h2></div>
+            <div class="bbody">
+                <!-- upload form -->
+                <form id="upload_form" enctype="multipart/form-data" method="post" action="upload.php" onSubmit="return checkForm()">
+                    <!-- hidden crop params -->
+                    <input type="hidden" id="x1" name="x1" />
+                    <input type="hidden" id="y1" name="y1" />
+                    <input type="hidden" id="x2" name="x2" />
+                    <input type="hidden" id="y2" name="y2" />
+                    <h2>Step1: 请选择一张图片</h2>
+                    <div><input type="file" name="image_file" id="image_file" onChange="fileSelectHandler()" /></div>
+                    <div class="error"></div>
+                    <div class="step2">
+                        <h2>Step2: 请指定裁切的范围</h2>
+                        <img id="preview" />
+                        <div class="info">
+                            <label>图片大小：</label> <input type="text" id="filesize" name="filesize" />
+                            <label>图片类型：</label> <input type="text" id="filetype" name="filetype" />
+                            <label>图片尺寸：</label> <input type="text" id="filedim" name="filedim" />
+                            <label>W宽度：</label> <input type="text" id="w" name="w" />
+                            <label>H高度：</label> <input type="text" id="h" name="h" />
+                        </div>
+                        <input type="submit" value="Upload" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
