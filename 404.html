@@ -1,34 +1,50 @@
-
-<!--欢迎加入域名公益网404公益项目-->
-<!-- 复制代码到你的网站中，可自由修改页面代码，如果能保留链接，我们会很感激-->  
-<!-- 如果你有闲置域名请以cname的方式指向到DO.DNPW.ORG参与域名公益-->
-
 <!DOCTYPE html>
-<html>
+<html lang="zh">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
-<title>404 Not Found</title><base target="_blank">
-<link type="text/css" rel="stylesheet" href="https://cdn.zhaolinlang.com/cdn.dnpw.org/project/404/0/common/404.css"/>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<title>错误页面 - 友情提示</title>
+<meta name="author" content="yinqi">
+<link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+<link href="../assets/css/materialdesignicons.min.css" rel="stylesheet">
+<link href="../assets/css/style.min.css" rel="stylesheet">
+<style>
+body{
+    background-color: #fff;
+}
+.error-page {
+    height: 100%;
+    position: fixed;
+    width: 100%;
+}
+.error-body {
+    padding-top: 5%;
+}
+.error-body h1 {
+    font-size: 210px;
+    font-weight: 700;
+    text-shadow: 4px 4px 0 #f5f6fa, 6px 6px 0 #33cabb;
+    line-height: 210px;
+    color: #33cabb;
+}
+.error-body h4 {
+    margin: 30px 0px;
+}
+</style>
 </head>
+  
 <body>
-<main><section class="collage-404">
-<h1>404</h1>
-<div class="collage-404-images">
-</div>
-</section><section class="message-404">
-<h1>页面找不到或已被删除</h1>
-<p>
-	Oops,Page not found or deleted <a id="color-choice"></a>
-</p>
+<section class="error-page">
+  <div class="error-box">
+    <div class="error-body text-center">
+      <h1>404</h1>
+      <h4>很抱歉，但是那个页面看起来已经不存在了。</h4>
+      <a href="./" class="btn btn-primary ">返回首页</a>
+    </div>
+  </div>
 </section>
-<div class="explore-cta">
-	<div>
-		<a href='/' target='_self' class="back">返回首页</a>
-		<input class="color-range">
-	</div>
-</div>
-</main>
-<script src="https://cdn.zhaolinlang.com/cdn.dnpw.org/project/404/0/common/404.js"></script>
+<script type="text/javascript" src="../assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="../assets/js/bootstrap.min.js"></script>
+<script type="text/javascript">;</script>
 </body>
 </html>
