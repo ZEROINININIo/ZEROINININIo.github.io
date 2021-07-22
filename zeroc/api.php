@@ -2,7 +2,7 @@
 
 $qq=$_POST['qq'];
 if($qq){
-	$url='http://'.mt_rand(0,99999999).'.qb-api.com/qb-api.php?mod=cha&qq='.$qq;
+	$url='http://'.mt_rand(0,99999999).'.cxx.yun7.me/qqapi?qq='.$qq;
 	$json = file_get_contents($url);
 	$arr = json_decode($json,true);
 	$code=$arr['code'];
