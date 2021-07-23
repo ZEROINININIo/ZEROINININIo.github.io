@@ -12,40 +12,6 @@
 <script src="//lib.baomitu.com/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 <script>
-function gg() {
-	layer.alert('您好！欢迎来到查绑API！本站由zero提供技术支持！', {
-		icon: 1,
-		title: '公告',
-		skin: 'layer-ext-moon'
-	},
-	function() {
-		favor();
-	})
-}
-function add() {
-	dialog('<div class="list-group-item" style="text-align:center"><b style="color:#ff4425">大部分手机浏览器都有添加到桌面功能，堪比App，快捷方便！<br><a onclick="favor()" class="btn btn-block btn-primary" style="background: linear-gradient(to right,#FF00F8,#FF00A8);">点我添加收藏！！</a><br></div></div>', 1);
-}
-function favor() {
-	var url = window.location;
-	var title = document.title;
-	var ua = navigator.userAgent.toLowerCase();
-	if (ua.indexOf("360se") > -1) {
-		layer.msg('您的浏览器不支持一键收藏,电脑请按Ctrl+D手动收藏 手机请点击下面的工具栏！');
-	} else if (ua.indexOf("msie 8") > -1) {
-		window.external.AddToFavoritesBar(url, title); //IE8
-	} else if (document.all) { //IE类浏览器
-		try {
-			window.external.addFavorite(url, title);
-		} catch(e) {
-			layer.msg('您的浏览器不支持一键收藏,电脑请按Ctrl+D手动收藏 手机请点击下面的工具栏！');
-		}
-	} else if (window.sidebar) { //firfox等浏览器；
-		window.sidebar.addPanel(title, url, "");
-	} else {
-		layer.msg('您的浏览器不支持一键收藏,电脑请按Ctrl+D手动收藏 手机请点击下面的工具栏！');
-	}
-}
-
 document.onkeydown = function() {
 	if (window.event && window.event.keyCode == 123) {
 		layer.alert("注意！网站禁止调试，如果您强制调试将无法正常使用！");
