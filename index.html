@@ -1,6 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+function password() { 
+ 
+var testV = 1; 
+ 
+var pass1 = prompt('站长因学业原因，暂时关闭站点访问，如需必要测试请输入秘钥:',''); 
+ 
+while (testV < 3) { 
+ 
+if (!pass1) 
+ 
+history.go(-1); 
+ 
+if (pass1 == "5531517w") { 
+ 
+alert('密码正确!请不忘初心'); 
+ 
+break; 
+ 
+} 
+ 
+testV+=-1; 
+ 
+var pass1 = prompt('如真需要秘钥请联系站长，不是测试人员请立刻关闭站点，感谢理解'); 
+ 
+} 
+ 
+if (pass1!="password" & testV ==3) 
+ 
+history.go(-1); 
+ 
+return " "; 
+ 
+} 
+ 
+document.write(password()); 
+  <head>
   <meta charset="utf-8">
   <title>zero引导页</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
