@@ -24,6 +24,21 @@ top.window.outerWidth<screen.availWidth)
 <meta charset="utf-8">
 <title>114514</title>
 </head>
+<script>
+    $(function () {
+        $('#pageFor-360').fullpage({
+            sectionsColor: ['#0da5d6', '#2AB561', '#DE8910', '#16BA9D', '#0DA5D6','white'],
+            afterLoad: function (anchorLink, index) {
+                /*1.先清除其它的类名current*/
+                $(".section").removeClass("current");
+                /*2.给当前标签添加类名currrent*/
+                setTimeout(function () {
+                    $(".section").eq(index-1).addClass("current");
+                },200);
+            }
+        });
+    });
+</script>
 
 <body>
 <article><img src="zerowebmap/b24a93046881b9d73c96e452214fe3cd_91254899_p0_master1200.jpg" width="1000" height="650" alt=""/>你被叔叔诅咒1小时内死亡，转发网站到3个群即可消除诅咒
