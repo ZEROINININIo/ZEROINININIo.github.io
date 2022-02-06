@@ -17,7 +17,7 @@
 <script src="http://oos-gz.ctyunapi.cn/svip2/jquery.min.js"></script>
    <script src="http://oos-gz.ctyunapi.cn/svip2/base64.min.js"></script>
 <script src="https://cdn.bootcss.com/clipboard.js/1.7.1/clipboard.min.js"></script>  
-<title>免费领𝐒𝐕𝐈𝐏会员</title>
+<title>免费领管添元</title>
 <style>
 .ad{position:fixed;left:0;right:0;bottom:0}.ad img{display:block;margin:0 auto;max-width:100%}.centerImg{height:100px;vertical-align:middle;margin:50px auto 5px;text-align:center}.centerImg img{height:100%}.centerImgBtn{margin-top:10px;height:auto}.centerImgBtn img{height:auto;width:90%}.centerText{text-align:center}.waitAcceptMoney{font-size:20px;font-family:'宋体'}.bigFont{font-size:36px}.gray{color:#aaa;font-weight:500}a{text-decoration:none;color:#467daa}.grayImg{display:none;position:absolute;width:150px;height:150px;left:0;right:0;background-color:#000;opacity:.7;border-radius:5px}#message{z-index:2147483584;position:absolute;background-color:#FFF;width:75%;padding:15px;text-align:center;line-height:1.8;left:0;right:0;top:150px;color:#555;font-size:14px;display:none;color:red;-webkit-border-radius:8px;-moz-border-radius:8px;border-radius:8px;-webkit-box-shadow:#666 0 0 10px;-moz-box-shadow:#666 0 0 10px;box-shadow:#666 0 0 10px}#alertBtnOk{display:block;width:100%;height:30px;color:green;text-align:center;text-decoration:none}
 </style>
