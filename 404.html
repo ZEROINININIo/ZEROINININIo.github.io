@@ -1,74 +1,97 @@
-<!doctype html>
+<!-- 
+  本代码由 便宜技术博猫 创建
+  技术支持 QQ:2420083841 www.azpay.cn
+  严禁反编译、逆向等任何形式的侵权行为，违者将追究法律责任
+ -->
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
-<title>404</title>
-<link rel="shortcut icon" href="iconx.ico" type="image/x-icon" />
-<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
-<link rel="stylesheet" href="css/font.css">
-<style>
-	.left{ width:30%; float:left} 
-	.right{ width:70%; float:right;}
-	body{
-		background-color:red;
-		font-size:14px;
-	}
-	h3{
-		font-size:60px;
-		color:rgb(100, 53, 41);
-		margin-left: 100px;
-		padding-top:40px;
-	}
-	p{
-	    font-size: 20px;
-	    color: blue;
-	    margin-left: 100px;
-	}
-</style>
-</head>
+  <meta charset="UTF-8">
+  <title>404</title>
+  <link rel="stylesheet" href="css/style.css">
 
-<body style="font-family:XiangSu;margin-left:20px;margin-right:20px;margin-top:10px;">
-<h3>404</h3>
-<p>oh! It seems that the web page or file you requested does not exist! Please check the URL or contact the administrator!</p>
-<p>嗨~嗨!似乎您所请求的网页或文件不存在!请检查网址链接准确性或联系网站管理员!（非服务器问题，可能网址输入错误）</p>
-<p>Here's a word~ (click on the text below to switch)</p>
-<div id="yiyan" onclick="add()"></div>
-<button style="cursor:pointer;margin-left: 100px;" class="btn btn-primary" onclick="skip()">Click me to Web HOME~点我返回</button>
-<script>
-    var yiyan=[
-        "我是单推ZEROXV的泽洛酱！",
-        "2024年了喔。零点还没变成废柴呢",
-        "管添元在这吗？",
-		"好累好累啊.....",
-		"嗯？",
-		"别在这看了！快去炉管吧！",
-		"难道你想变成...废柴吗",
-		"你知道吗？这个页面已经飞啦~~~好远好远的喔~",
-		"我喜欢你！ 但是你在哪？哎哎哎，等等啊~~",
-		"其实吧，我觉着你可以回去看看。。或者吃好吃的？玩一下游戏？又或者去骚扰一下零点？"
-        ]
-	var num = 0
-	var dqsl = num+1
-	var count = yiyan.length
-	function add(){
-		num++
-		dqsl++
-		if (num==count){
-			num = 0
-			dqsl = num+1
-		}
-		document.getElementById("yiyan").innerHTML='<p style="font-size: 30px;">' + yiyan[num] + "&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(" + dqsl +"/" + yiyan.length + ")" + "</p>"
-	}
-    document.getElementById("yiyan").innerHTML='<p style="font-size: 30px;">' + yiyan[num] + "&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(" + dqsl +"/" + yiyan.length + ")" + "</p>"
-	setInterval(() => {
-		add()
-	}, 4000);
-	function skip(){
-		location.href="https://zeroinininio.github.io"
-	}
-</script>
+</head>
+<body>
+
+<div class="about">
+   <a class="bg_links social portfolio" href="#">
+      <span class="icon"></span>
+   </a>
+   <a class="bg_links social dribbble" href="#">
+      <span class="icon"></span>
+   </a>
+   <a class="bg_links social linkedin" href="#">
+      <span class="icon"></span>
+   </a>
+   <a class="bg_links logo"></a>
+</div>
+
+
+    <nav>
+        <div class="menu">
+            <p class="website_name">LOGO</p>
+            <div class="menu_links">
+                <a href class="link">about</a>
+                <a href class="link">projects</a>
+                <a href class="link">contacts</a>
+            </div>
+            <div class="menu_icon">
+                <span class="icon"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="wrapper">
+
+        <div class="container">
+
+            <div id="scene" class="scene" data-hover-only="false">
+
+
+                <div class="circle" data-depth="1.2"></div>
+
+                <div class="one" data-depth="0.9">
+                    <div class="content">
+                        <span class="piece"></span>
+                        <span class="piece"></span>
+                        <span class="piece"></span>
+                    </div>
+                </div>
+
+                <div class="two" data-depth="0.60">
+                    <div class="content">
+                        <span class="piece"></span>
+                        <span class="piece"></span>
+                        <span class="piece"></span>
+                    </div>
+                </div>
+
+                <div class="three" data-depth="0.40">
+                    <div class="content">
+                        <span class="piece"></span>
+                        <span class="piece"></span>
+                        <span class="piece"></span>
+                    </div>
+                </div>
+
+                <p class="p404" data-depth="0.50">404</p>
+                <p class="p404" data-depth="0.10">404</p>
+
+            </div>
+
+            <div class="text">
+                <article>
+                    <p>Uh oh! 看来你迷路了。<br>请点击按钮返回首页！</p>
+                    <button>返回首页</button>
+                </article>
+            </div>
+
+        </div>
+    </section>
+	
+	<script src="js/parallax.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+
 </body>
 </html>
