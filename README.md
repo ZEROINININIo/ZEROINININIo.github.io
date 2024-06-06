@@ -1,124 +1,41 @@
-# ZYYO主页php后台版本已经上线
-售价20元
+<p>
+<strong><h2>無名の主页 </h2></strong>
+简单的小主页，原来的看够了，重新弄了一个
+</p>
 
-包含对图标,项目,分类,主题样式,标签,描述,左侧信息的增删改查
+![無名の主页](https://img.imsyy.top/other/imsyy-home.png)
 
-方便的编辑名称,图标,点击.js事件等等
+>主页的名称字体已经过压缩，若用名称以外的字母会变回默认字体，这里是 [完整字体](https://cdn.jsdelivr.net/gh/imsyy/file/font/Pacifico-Regular.ttf)
 
-可以控制贪吃蛇,侧边栏,技能的开关
+### Demo
+>由于 CDN 缓存原因，查看最新效果可能需要 `Ctrl` + `F5` 强制刷新浏览器缓存
 
-可以在后台切换多主题,方便的对多主题进行切换,对主题所有细节进行修改
+- [無名の主页](https://www.imsyy.top)
 
+### 功能
 
-演示站:zyyo.cc
+- [x] 载入动画
+- [x] 站点简介
+- [x] Hitokoto 一言
+- [x] 日期及时间
+- [x] 实时天气
+- [x] 时光进度条
+- [x] 音乐播放器
+- [x] 移动端适配
+* [ ] 还没想好呢
 
-后台:zyyo.cc/admin
-账号admin
-密码123456
+### 插件
 
-有需要添加QQ:3509679579
+* [Bootstrap](https://getbootstrap.com/)
+* [iziToast](https://izitoast.marcelodolza.com/)
+* [Iconfont](https://www.iconfont.cn/)
+* [jQuery](https://jquery.com/)
+* [Aplayer](https://aplayer.js.org/)
 
-交流群:560938976
+### API
 
+* [小歪 API](https://api.ixiaowai.cn/)
+* [天气 API](https://www.tianqiapi.com/)
+* [Hitokoto 一言](https://hitokoto.cn/)
 
-
-
-
-
-
-多主题优雅个人主页
-后续计划增加主页时钟,主页音乐播放器
-增加php管理后台
-# 1.5更新 2024.5.14
-修复ios浏览器背景无法正常模糊
-修复黑夜模式切换造成的不连贯卡顿
-优化不同屏幕大小的字体以及其他大小显示
-优化大量细节
-# 1.4 最新更新
-把所有图片全部改为字体图标
-去除鼠标样式
-优化细节
-修改所有路径为相对路径
-修复其他问题
-# 1.3最新更新
-优化加载动画
-增加点击q弹动画
-增加5套亮色主题,且通用css变量实现,完全取消主题切换对js的依赖.新增主题只需要在/static/root.css修改
-去除前台切换多主题,只可切换暗夜模式
-增加模糊,有背景整体模糊和卡片模糊
-卡片半透明模糊或者背景模糊二选一
-增加自定义功能
-优化细节
-优化动效,去除无用效果
-电脑端改为一行4个
-手机端有一行两个和一行一个
-# 1.2
-新增侧边栏并且支持移动端弹出
-去除白色主题
-优化动效,优化卡顿
-# 1.0
-无侧边栏白天黑夜切换
-三套主题
-前台一键切换
-
-# 使用
-
-下载解压即可访问
-/static/root.css主题文件
-/static/style.css样式文件
-在此可以修改各种字体
-/static/img/favicon.ico网页ico和主页头像
-/static/script.js js文件
-
-
-
-# 缘由
-
-受到xhofe和ddiu个人主页的灵感启发
-
-感谢这二位大佬
-
-决定写款主页练手
-
-初个版本花了几个小时,页面并不复杂,但是在后续我花费了很多时间去优化这个主页,因为我有非常严重的强迫证,非常抓细节
-
-我真的为了这个主页的优化后续付出了非常多的心力,请还不要攻击,喜欢可以赞助,不喜欢可以走开
-
-# 特色
-
-具有白天和黑夜模式
-
-白天模式有5套主题
-
-模糊方式有背景整体模糊和卡片模糊,可以通过css切换主题
-
-原生html,css,js，未使用框架和插件,问就是不会
-
-github:https://github.com/ZYYO666/homepage
-
-添加QQ裙下载:560938976
-
-强烈推荐,方便我在群里吹牛
-
-演示站:https://zyyo.net
-
-
-#技术栈
-
-html
-css
-js
-
-# 鸣谢
-
-iconfont图标
-Pacifico-Regular字体
-Ubuntu-Regular字体
-
-# 备注
-
-页面图标都是svg,可也自己找然后切换
-
-字体目前最新版是鸿蒙字体,可以自己设置
-
-
+<a title="SSL" target="_blank" href="https://myssl.com/seal/detail?domain=blog.imsyy.top"><img src="https://img.shields.io/badge/MySSL-安全认证-brightgreen"></a>&nbsp;<a title="CDN" target="_blank" href="https://cdnjs.com/"><img src="https://img.shields.io/badge/CDN-Cloudflare-blue"></a>&nbsp;<a title="Copyright" target="_blank" href="https://imsyy.top/"><img src="https://img.shields.io/badge/Copyright%20%C2%A9%202020--2022-%E7%84%A1%E5%90%8D-red"></a>
