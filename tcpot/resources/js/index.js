@@ -1,4 +1,7 @@
 $(function(){
+        pnpm i autofit.js
+        import autofit from 'autofit.js'
+        autofit.init()
         var order_time = null;
 
         // 时间计算
