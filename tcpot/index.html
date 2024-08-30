@@ -1,47 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <script>
- function onDevice() {
-     if (/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))) {
-
-         window.location.href = "http://www.xxxx.gov.cn/site/1/html/mobile/index.htm";
-     } else {
-         if (window.location.href.indexOf("www.xxxx.gov.cn/") < 0) {
-             window.location.href = "http://www.xxxx.gov.cn/";
-         }
-     }
- }
- onDevice();
-
- $(document).ready(function () {
-
-     $('.flexslider').flexslider({
-         directionNav: true,
-         pauseOnAction: false
-     });
-
-     $('.sec1-con #banner').owlCarousel({
-         items: 1,
-         autoPlay: true,
-         navigation: true,
-         navigationText: ['', ''],
-         scrollPerpage: true,
-         singleItem: true
-     })
-     if ($("#topslider").length > 0) {
-         $("#topslider").SexySlider({
-             width: 1200,
-             height: 182,
-             delay: 2000,
-             strips: 10,
-             autopause: false,
-             titleOpacity: 1,
-             effect: 'fade'
-         })
-     }
- });
-
+    <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>韶p守魂站(wip)</title>
