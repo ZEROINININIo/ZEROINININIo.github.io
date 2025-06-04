@@ -20,13 +20,13 @@ $(function(){
             }
         }
 
-        function checkTime(i) { //将0-9的数字前面加上0，例1变为01
-            if (i < 10) {
-                i = "0" + i;
-            }
-            return i;
-        }
-
+        // function checkTime(i) { //将0-9的数字前面加上0，例1变为01
+        //    if (i < 10) {
+         //       i = "0" + i;
+         //   }
+        //    return i;
+      //  }
+       
         // 刷新时间
         function runTime(time) {
             var futureDate = new Date(time);
@@ -35,7 +35,7 @@ $(function(){
 
         // 执行
         $(function () {
-            var futureTime = "2026-8-31 19:29:40";
+            var futureTime = "2025-6-2 00:00:00";
             runTime(futureTime);
             $(".tips").text(futureTime);
         });
