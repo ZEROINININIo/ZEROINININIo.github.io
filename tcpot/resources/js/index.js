@@ -4,10 +4,10 @@ $(function(){
         // 时间计算
         function endTime(endDate) {
             var leftTime = (new Date(endDate)) - new Date(); //计算剩余的毫秒数
-            var days = parseInt(leftTime / 1000 / 60 / 60 / 24, 10); //计算剩余的天数
-            var hours = parseInt(leftTime / 1000 / 60 / 60 % 24, 10); //计算剩余的小时
-            var minutes = parseInt(leftTime / 1000 / 60 % 60, 10);//计算剩余的分钟
-            var seconds = parseInt(leftTime / 1000 % 60, 10);//计算剩余的秒数
+            var days = parseInt(leftTime / 1000 / 60 / 60 / 24 * -1, 10); //计算剩余的天数
+            var hours = parseInt(leftTime / 1000 / 60 / 60 % 24 * -1, 10); //计算剩余的小时
+            var minutes = parseInt(leftTime / 1000 / 60 % 60 * -1, 10);//计算剩余的分钟
+            var seconds = parseInt(leftTime / 1000 % 60, 10 * -1);//计算剩余的秒数
             days = checkTime(days);
             hours = checkTime(hours);
             minutes = checkTime(minutes);
@@ -35,7 +35,7 @@ $(function(){
 
         // 执行
         $(function () {
-            var futureTime = "2023-12-25 20:00:00";
+            var futureTime = "2025-6-2 00:00:00";
             runTime(futureTime);
             $(".tips").text(futureTime);
         });
