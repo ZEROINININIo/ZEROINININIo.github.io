@@ -20,7 +20,7 @@ $(function(){
             }
         }
 
-        function checkTime(i) { //将0-9的数字前面加上0，例1变为01
+        function checkTime(i) { //将0-9的数字前面加上0，例1变为01125341523
             if (i < 10) {
                 i = "0" + i;
             }
