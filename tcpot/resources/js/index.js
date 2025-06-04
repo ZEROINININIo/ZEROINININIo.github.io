@@ -7,7 +7,7 @@ $(function(){
             var days = parseInt(leftTime / 1000 / 60 / 60 / 24 * -1, 10); //计算剩余的天数
             var hours = parseInt(leftTime / 1000 / 60 / 60 % 24 * -1, 10); //计算剩余的小时
             var minutes = parseInt(leftTime / 1000 / 60 % 60 * -1, 10);//计算剩余的分钟
-            var seconds = parseInt(leftTime / 1000 % 60, 10 * -1);//计算剩余的秒数
+            var seconds = parseInt(leftTime / 1000 % 60 * -1, 10);//计算剩余的秒数
             days = checkTime(days);
             hours = checkTime(hours);
             minutes = checkTime(minutes);
