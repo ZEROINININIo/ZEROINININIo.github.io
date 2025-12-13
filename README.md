@@ -1,20 +1,20 @@
-<p>
-<strong><h2></h2></strong>
-简单的小主页，原来的看够了，重新弄了一个
-</p>
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+</div>
 
-### 插件
+# Run and deploy your AI Studio app
 
-* [Bootstrap](https://getbootstrap.com/)
-* [iziToast](https://izitoast.marcelodolza.com/)
-* [Iconfont](https://www.iconfont.cn/)
-* [jQuery](https://jquery.com/)
-* [Aplayer](https://aplayer.js.org/)
+This contains everything you need to run your app locally.
 
-### API
+View your app in AI Studio: https://ai.studio/apps/drive/1oCvY96fegALgHB3_vpHNPnXGy3uZ-dEV
 
-* [小歪 API](https://api.ixiaowai.cn/)
-* [天气 API](https://www.tianqiapi.com/)
-* [Hitokoto 一言](https://hitokoto.cn/)
+## Run Locally
 
-<a title="SSL" target="_blank" href="https://myssl.com/seal/detail?domain=blog.imsyy.top"><img src="https://img.shields.io/badge/MySSL-安全认证-brightgreen"></a>&nbsp;<a title="CDN" target="_blank" href="https://cdnjs.com/"><img src="https://img.shields.io/badge/CDN-Cloudflare-blue"></a>&nbsp;<a title="Copyright" target="_blank" href="https://imsyy.top/"><img src="https://img.shields.io/badge/Copyright%20%C2%A9%202020--2025-xv-red"></a>
+**Prerequisites:**  Node.js
+
+
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`
